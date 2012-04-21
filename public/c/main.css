@@ -10,4 +10,4 @@ body:not(.auth) .auth-on, body.auth .auth-off { display: none; }
 header { display: table; width: 100%; }
 header > div { display: table-row; }
 header > div > * { display: table-cell; }
-header p.auth-on { vertical-align: top; text-align: right; }
+header p.auth-on { vertical-align: top; text-align: right; padding-left: 12px; }
