@@ -8,5 +8,10 @@
     "url": "git://github.com/medikoo/soundcloud-playlist-manager.git"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "jslint": "git://github.com/medikoo/node-jslint.git#medikoo"
+  },
+  "scripts": {
+    "lint": "node ./node_modules/jslint/bin/jslint --color --git"
+  }
 }

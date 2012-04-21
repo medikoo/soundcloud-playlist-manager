@@ -1,0 +1,5 @@
+@root
+indent 2
+
+./lib/soundmanager2.js
+predef+ soundManager
