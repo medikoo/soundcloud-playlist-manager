@@ -2,3 +2,4 @@
 /.lintcache
 /node_modules
 /npm-debug.log
+/public/j/main.js
