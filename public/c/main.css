@@ -1,0 +1,13 @@
+* { margin: 0; padding: 0; }
+body { padding: 0 12px; color: #333; background: white; }
+header, section { margin: 12px 0; background: #eee; outline: 1px solid #ddd; padding: 12px; }
+h1 { line-height: 48px; }
+p { line-height: 24px; }
+a[onclick], a.dynamic { cursor: pointer; }
+
+body:not(.auth) .auth-on, body.auth .auth-off { display: none; }
+
+header { display: table; width: 100%; }
+header > div { display: table-row; }
+header > div > * { display: table-cell; }
+header p.auth-on { vertical-align: top; text-align: right; }

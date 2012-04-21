@@ -10,3 +10,6 @@ predef+ soundManager
 
 ./lib/soundcloud.js
 predef+ location, localStorage, SC
+
+./lib/view.js
+predef+ document
