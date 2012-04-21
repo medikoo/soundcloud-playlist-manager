@@ -1,0 +1,12 @@
+{
+  "author": "Mariusz Nowak <medikoo+soundcloud@medikoo.com>",
+  "name": "soundcloud-playlist-manager",
+  "description": "SoundCloud playlist manager",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/medikoo/soundcloud-playlist-manager.git"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
