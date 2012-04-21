@@ -1,13 +1,18 @@
-* { margin: 0; padding: 0; }
-body { padding: 0 12px; color: #333; background: white; }
-header, section { margin: 12px 0; background: #eee; outline: 1px solid #ddd; padding: 12px; }
+*:not(button) { margin: 0; padding: 0; }
+body { padding: 0 12px; color: #333; background: white; min-width: 750px; }
+body > * { margin: 12px 0; }
+header, section { background: #eee; outline: 1px solid #ddd; padding: 12px; }
 h1 { line-height: 48px; }
 p { line-height: 24px; }
 a[onclick], a.dynamic { cursor: pointer; }
 
 body:not(.auth) .auth-on, body.auth .auth-off { display: none; }
 
-header { display: table; width: 100%; }
-header > div { display: table-row; }
-header > div > * { display: table-cell; }
-header p.auth-on { vertical-align: top; text-align: right; padding-left: 12px; }
+header, div.main { display: table; width: 100%; }
+header > div, div.main > div { display: table-row; }
+header > div > *, div.main > div > * { display: table-cell; vertical-align: top; }
+header p.auth-on { text-align: right; padding-left: 12px; }
+
+div.main > div > div:first-child { width: 300px; }
+section.playlist-manager { margin-right: 6px; }
+section.playlist { margin-left: 6px; }
