@@ -1,4 +1,3 @@
-soundcloud-playlist-manager
-===========================
+# Playlist Manager for SoundCloud
 
-Playlist Manager for SoundCloud (Prototype)
+Prototype of playlist manager for tracks available at SoundCloud
