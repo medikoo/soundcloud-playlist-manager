@@ -13,10 +13,13 @@
     "webmake": "0.3.x"
   },
   "devDependencies": {
-    "jslint": "git://github.com/medikoo/node-jslint.git#medikoo"
+    "jsdom": "0.2.x",
+    "jslint": "git://github.com/medikoo/node-jslint.git#medikoo",
+    "tad": "0.1.x"
   },
   "scripts": {
     "lint": "node ./node_modules/jslint/bin/jslint --git",
-    "setup": "node ./node_modules/webmake/bin/webmake ./lib/public/main.js ./public/j/main.js"
+    "setup": "node ./node_modules/webmake/bin/webmake ./lib/public/main.js ./public/j/main.js",
+    "test": "node ./test"
   }
 }

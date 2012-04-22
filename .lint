@@ -4,6 +4,7 @@ maxlen 80
 !node
 nomen
 white:commafirstvar
+predef+ console
 
 ./lib/soundmanager2.js
 predef+ soundManager
@@ -12,4 +13,11 @@ predef+ soundManager
 predef+ location, localStorage, SC
 
 ./lib/view.js
+predef+ document, location
+
+./lib/model/text.js
 predef+ document
+
+./test
+newcap
+node
