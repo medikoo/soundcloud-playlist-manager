@@ -17,8 +17,25 @@
 <div class="auth-on main">
   <div>
     <div><section class="playlist-manager">
-        <p><button type="button">+ Add Playlist</button></p>
+        <p><input class="add-playlist" type="button" value="+ Add Playlist" /></p>
         <ul></ul>
+        <section class="playlist-form overlay">
+          <p class="close"><a>x</a></p>
+          <form class="body" method="post">
+            <h3> </h3>
+            <table>
+              <tr>
+                <th class="required"><label for="pf-title">Title</label></th>
+                <td><input id="pf-title" name="title" required /></td>
+              </tr>
+              <tr>
+                <th><label for="pf-desc">Description</label></th>
+                <td><textarea id="pf-desc" name="description" rows="4"></textarea></td>
+              </tr>
+              <tr><td></td><td><input type="submit" /></td></tr>
+            </table>
+          </form>
+        </section>
     </section></div>
     <div><section class="playlist">
         <p>No playlist chosen</p>

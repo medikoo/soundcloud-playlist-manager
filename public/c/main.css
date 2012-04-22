@@ -1,6 +1,6 @@
 *:not(button) { margin: 0; padding: 0; }
 body { padding: 0 12px; color: #333; background: white; min-width: 750px; }
-body > * { margin: 12px 0; }
+body > *, .body > * { margin: 12px 0; }
 header, section { background: #eee; outline: 1px solid #ddd; padding: 12px; }
 h1 { line-height: 48px; }
 p { line-height: 24px; }
@@ -17,4 +17,28 @@ div.main > div > div:first-child { width: 300px; }
 section.playlist-manager { margin-right: 6px; }
 section.playlist { margin-left: 6px; }
 
-section.playlist-manager, section.playlist { min-height: 100px; }
+section.playlist-manager, section.playlist { min-height: 120px; position: relative; }
+
+.body > *:first-child { margin-top: 0; }
+.body > *:last-child { margin-bottom: 0; }
+
+h3 { line-height: 24px; }
+th, td { line-height: 20px; padding: 8px 6px; }
+th { text-align: right; font-weight: normal; vertical-align: top; }
+td { text-align: left; }
+td input:not([type=submit]), td textarea { width: 360px; }
+
+input[type=button], input[type=submit] { height: 24px; padding: 0 6px; }
+
+.overlay {
+  position: absolute; z-index: 1; display: none;
+  -moz-box-shadow:    12px 12px 6px 0 #ccc;
+  -webkit-box-shadow: 12px 12px 6px 0 #ccc;
+  box-shadow:         12px 12px 6px 0 #ccc;
+}
+.playlist-form { top: 48px; left: 96px; }
+
+.overlay p.close { position: absolute; top: 0; right: 10px; font-size: 14px; }
+.overlay p.close a { color: #888; cursor: pointer; }
+
+th.required::after { content: " *"; }
