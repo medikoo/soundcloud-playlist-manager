@@ -16,3 +16,5 @@ header p.auth-on { text-align: right; padding-left: 12px; }
 div.main > div > div:first-child { width: 300px; }
 section.playlist-manager { margin-right: 6px; }
 section.playlist { margin-left: 6px; }
+
+section.playlist-manager, section.playlist { min-height: 100px; }
