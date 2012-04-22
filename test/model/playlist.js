@@ -10,6 +10,7 @@ module.exports = function (t, a) {
   a(String(playlist.title), 'Title', "Title");
   a(String(playlist.description), 'Description', "Description");
   a(typeof playlist._id, 'string', "Id");
+  a(String(playlist), 'Title', "toString");
 
   playlist.insert(x);
   a(playlist.length, 1, "Insert: length");
