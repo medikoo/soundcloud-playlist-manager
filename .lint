@@ -3,6 +3,7 @@ indent 2
 maxlen 80
 !node
 nomen
+objfn
 white:commafirstvar
 predef+ console
 

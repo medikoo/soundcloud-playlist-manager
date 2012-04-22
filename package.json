@@ -10,6 +10,7 @@
   "dependencies": {
     "es5-ext": "git://github.com/medikoo/es5-ext.git",
     "deferred": "git://github.com/medikoo/deferred.git",
+    "event-emitter": "git://github.com/medikoo/event-emitter.git",
     "webmake": "0.3.x"
   },
   "devDependencies": {
