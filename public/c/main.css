@@ -6,7 +6,7 @@ h1 { line-height: 48px; }
 p { line-height: 24px; }
 a[onclick], a.dynamic { cursor: pointer; }
 
-body:not(.auth) .auth-on, body.auth .auth-off { display: none; }
+body:not(.auth) .auth-on { display: none; }
 
 header, div.main { display: table; width: 100%; }
 header > div, div.main > div { display: table-row; }
