@@ -1,10 +1,12 @@
 *:not(button) { margin: 0; padding: 0; }
 body { padding: 0 12px; color: #333; background: white; min-width: 750px; }
-body > *, .body > * { margin: 12px 0; }
+body > *, .body > *, section.playlist-manager > *, section.playlist > * {
+  margin: 12px 0; }
 header, section { background: #eee; outline: 1px solid #ddd; padding: 12px; }
 h1 { line-height: 48px; }
 p { line-height: 24px; }
 a[onclick], a.dynamic { cursor: pointer; }
+ul { list-style: none; }
 
 body:not(.auth) .auth-on { display: none; }
 
@@ -17,10 +19,17 @@ div.main > div > div:first-child { width: 300px; }
 section.playlist-manager { margin-right: 6px; }
 section.playlist { margin-left: 6px; }
 
-section.playlist-manager, section.playlist { min-height: 120px; position: relative; }
+section.playlist-manager, section.playlist {
+  min-height: 120px; position: relative;
+}
+section.playlist-manager > *, section.playlist > * {
+  margin: 12px 0;
+}
 
-.body > *:first-child { margin-top: 0; }
-.body > *:last-child { margin-bottom: 0; }
+.body > *:first-child, section.playlist-manager > *:first-child,
+  section.playlist > *:first-child { margin-top: 0; }
+.body > *:last-child, section.playlist-manager > *:last-child,
+  section.playlist > *:last-child { margin-bottom: 0; }
 
 h3 { line-height: 24px; }
 th, td { line-height: 20px; padding: 8px 6px; }
