@@ -71,4 +71,6 @@ module.exports = function (t, a) {
   a(String(playlist.description), 'TestDescription', "fromJSON: description");
   a.deep(playlist.map(Function.pluck('_id')), ['a', 'b', 'd'],
     "fromJSON: data");
+
+  a(t.get('pid'), playlist, "get");
 };

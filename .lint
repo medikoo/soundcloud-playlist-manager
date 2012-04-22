@@ -4,6 +4,7 @@ maxlen 80
 !node
 nomen
 objfn
+eqeq:null
 white:commafirstvar
 predef+ console
 
