@@ -6,7 +6,7 @@ nomen
 objfn
 eqeq:null
 white:commafirstvar
-predef+ console
+predef+ confirm, console
 
 ./lib
 browser
