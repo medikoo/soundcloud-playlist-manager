@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (t, a) {
-  var el1, el2, el3, el4, fn = function () {};
+  var el1, el2, el3, el4, fn = function () {}, node;
 
   el1 = t('p');
 
@@ -30,4 +30,7 @@ module.exports = function (t, a) {
   a.deep(Object.toArray(el4.childNodes), [el3, el2],
     "With attrs & children: Children");
 
+  node = t('div', el2, 'Test').childNodes[1];
+  a(node.nodeType, 3, "String to Text node");
+  a(node.data, 'Test', "String to Text node: content");
 };
