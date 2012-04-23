@@ -74,6 +74,7 @@ input:disabled { color: #bbb; }
 th.required::after { content: " *"; }
 
 h2 { font-size: 18px; }
+input.add-tracks { margin-right: 6px; }
 div.controls { text-align: right; }
 p.edit { line-height: 36px; }
 p.edit input { height: 16px; font-size: 12px; vertical-align: middle; }
