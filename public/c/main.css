@@ -2,19 +2,19 @@
 body { padding: 0 12px; color: #333; background: white; min-width: 750px; }
 body > *, .body > *, section.playlist-manager > *, section.playlist > * {
   margin: 12px 0; }
-header, section { background: #eee; outline: 1px solid #ddd; padding: 12px; }
+body > header, section { background: #eee; outline: 1px solid #ddd; padding: 12px; }
 h1 { line-height: 48px; }
 p { line-height: 24px; }
 a { cursor: pointer; }
 ul { list-style: none; }
-a { color: #666; }
+a { color: #666; }s
 a:hover { color: #888; }
 
 body:not(.auth) .auth-on { display: none; }
 
 header, div.main { display: table; width: 100%; }
-header > div, div.main > div { display: table-row; }
-header > div > *, div.main > div > * { display: table-cell; vertical-align: top; }
+header > *, div.main > * { display: table-row; }
+header > * > *, div.main > * > * { display: table-cell; vertical-align: top; }
 header p.auth-on { text-align: right; padding-left: 12px; }
 
 div.main > div > div:first-child { width: 300px; }
@@ -39,7 +39,15 @@ th { text-align: right; font-weight: normal; vertical-align: top; }
 td { text-align: left; }
 td input:not([type=submit]), td textarea { width: 360px; }
 
-input[type=button], input[type=submit] { height: 24px; padding: 0 6px; }
+input[type=button], input[type=submit] {
+  height: 22px; padding: 0 12px;
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+input[type=button]:hover, input[type=submit]:hover {
+  background: #fff;
+}
 
 .overlay {
   position: absolute; z-index: 1; display: none;
@@ -53,3 +61,9 @@ input[type=button], input[type=submit] { height: 24px; padding: 0 6px; }
 .overlay p.close a { color: #888; cursor: pointer; }
 
 th.required::after { content: " *"; }
+
+h2 { font-size: 18px; }
+div.controls { text-align: right; }
+p.edit { line-height: 36px; }
+p.edit input { height: 16px; font-size: 12px; vertical-align: middle; }
+p.edit input + input { margin-left: 3px; }
