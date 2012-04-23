@@ -15,7 +15,9 @@ body:not(.auth) .auth-on { display: none; }
 header, div.main { display: table; width: 100%; }
 header > *, div.main > * { display: table-row; }
 header > * > *, div.main > * > * { display: table-cell; vertical-align: top; }
-header p.auth-on { text-align: right; padding-left: 12px; }
+body > header > div > h1 { vertical-align: middle; }
+body > header > div > div > * { text-align: right; padding-left: 12px; }
+body > header p.controls { padding-top: 12px; }
 
 div.main > div > div:first-child { width: 300px; }
 section.playlist-manager { margin-right: 6px; }
