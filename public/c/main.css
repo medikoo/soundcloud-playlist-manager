@@ -27,6 +27,14 @@ section.playlist-manager, section.playlist {
 section.playlist-manager > *, section.playlist > * {
   margin: 12px 0;
 }
+section.playlist-manager li {
+  margin: 0 -12px;
+}
+section.playlist-manager li a {
+  display: block;
+  padding: 0 12px;
+}
+li.selected { background: #f8f8f8; }
 
 .body > *:first-child, section.playlist-manager > *:first-child,
   section.playlist > *:first-child { margin-top: 0; }
