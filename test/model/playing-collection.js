@@ -23,7 +23,7 @@ module.exports = function (t, a) {
     a(e.target, z, "Emit: insert: target");
     e.undo();
     a.deep(col.map(i), [x, y], "Emit: insert: undo");
-    col.insert(z, 1);
+    e.redo();
   });
   col.insert(z, 1);
   a(invoked, true, "Emit: insert");
@@ -43,7 +43,7 @@ module.exports = function (t, a) {
     a(e.target, w, "Emit: remove: target");
     e.undo();
     a.deep(col.map(i), [x, z, w, y], "Emit: remove: undo");
-    col.remove(w);
+    e.redo();
   });
   col.remove(w);
   a(invoked, true, "Emit: remove");
