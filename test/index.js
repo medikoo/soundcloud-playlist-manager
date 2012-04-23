@@ -12,9 +12,11 @@ var resolve = require('path').resolve
 
 require('../lib/ext');
 
-suite([resolve(__dirname, '../lib/model')])(function (suite) {
-  var c = suite.console;
-  process.on('exit', function () {
-    process.exit(c.errored ? 2 : (c.failed ? 1 : 0));
-  });
-});
+suite([resolve(__dirname, '../lib/model'), resolve(__dirname, '../lib/util')])(
+  function (suite) {
+    var c = suite.console;
+    process.on('exit', function () {
+      process.exit(c.errored ? 2 : (c.failed ? 1 : 0));
+    });
+  }
+);
