@@ -7,6 +7,8 @@ h1 { line-height: 48px; }
 p { line-height: 24px; }
 a[onclick], a.dynamic { cursor: pointer; }
 ul { list-style: none; }
+a { color: #666; }
+a:hover { color: #888; }
 
 body:not(.auth) .auth-on { display: none; }
 
