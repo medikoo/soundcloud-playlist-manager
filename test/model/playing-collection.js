@@ -4,7 +4,7 @@ var i    = require('es5-ext/lib/function/i')
   , noop = Function.noop;
 
 module.exports = function (t, a) {
-  var col = Object.merge([], t), node, json, invoked
+  var col = Object.merge([], t), node, json, invoked, history
     , x = { _id: 'x', play: noop }, y = { _id: 'y', play: noop }
     , z = { _id: 'z', play: noop }, w = { _id: 'w', play: noop };
 
@@ -21,9 +21,10 @@ module.exports = function (t, a) {
     a.deep(col.map(i), [x, z, y], "Insert at index: content");
 
     a(e.target, z, "Emit: insert: target");
-    e.undo();
+    history = e.history();
+    history.undo();
     a.deep(col.map(i), [x, y], "Emit: insert: undo");
-    e.redo();
+    history.redo();
   });
   col.insert(z, 1);
   a(invoked, true, "Emit: insert");
@@ -41,9 +42,10 @@ module.exports = function (t, a) {
     a.deep(col.map(i), [x, z, y], "Remove: content");
 
     a(e.target, w, "Emit: remove: target");
-    e.undo();
+    history = e.history();
+    history.undo();
     a.deep(col.map(i), [x, z, w, y], "Emit: remove: undo");
-    e.redo();
+    history.redo();
   });
   col.remove(w);
   a(invoked, true, "Emit: remove");

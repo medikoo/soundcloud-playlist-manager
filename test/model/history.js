@@ -5,27 +5,27 @@ var k = require('es5-ext/lib/Function/k');
 module.exports = function (t, a) {
   var history = new t(), x, y, z, data = [], invoked;
 
-  history.add(function () {
+  history.add({ undo: function () {
     data.push('1U');
-  }, function () {
+  }, redo: function () {
     data.push('1R');
-  });
+  } });
 
-  history.add(function () {
+  history.add({ undo: function () {
     data.push('2U');
-  }, function () {
+  }, redo: function () {
     data.push('2R');
-  });
+  } });
 
   history.once('update', function (e) {
     invoked = true;
     a.deep(e, { length: 3, current: 3 }, "Emit: add: event");
   });
-  history.add(function () {
+  history.add({ undo: function () {
     data.push('3U');
-  }, function () {
+  }, redo: function () {
     data.push('3R');
-  });
+  } });
   a(invoked, true, "Emit: add");
 
   history.back();
@@ -53,11 +53,11 @@ module.exports = function (t, a) {
   history.back();
   history.back();
 
-  history.add(function () {
+  history.add({ undo: function () {
     data.push('4U');
-  }, function () {
+  }, redo: function () {
     data.push('4R');
-  });
+  } });
 
   history.forward();
 
