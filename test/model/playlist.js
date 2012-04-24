@@ -33,7 +33,7 @@ module.exports = function (t, a) {
   a(node.nodeType, 3, "toDOM");
   a(node.data, 'New T', "DOM content");
 
-  json = playlist.toJSON();
+  json = JSON.parse(JSON.stringify(playlist));
   a.deep(json.data, ['x', 'z', 'y'], "toJSON: data");
   delete json.data;
   a.deep(json, { title: 'New T', description: 'New D' }, "toJSON: rest");

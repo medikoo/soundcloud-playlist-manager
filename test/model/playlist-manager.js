@@ -18,7 +18,7 @@ module.exports = function (t, a) {
   manager.insert(z);
   manager.insert(y);
 
-  json = manager.toJSON();
+  json = JSON.parse(JSON.stringify(manager));
   a.deep(json, ['x', 'z', 'y'], "toJSON");
 
   a.deep(t.fromJSON(['w', 'y']).map(i), [w, y], "fromJSON");
