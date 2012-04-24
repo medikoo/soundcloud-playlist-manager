@@ -10,15 +10,18 @@
       <p class="auth-on">
         Logged in as <b class="user-name"></b> | <a class="logout">Logout</a>
       </p>
-      <p class="controls">
+      <p class="controls auth-on">
         <input class="undo" type="button" value="Undo" disabled />
         <input class="redo" type="button" value="Redo" disabled />
       </p>
     </div>
   </div>
 </header>
-<section class="notice">
+<section class="notice" style="display: none">
   <p>If the authentication window does not appear, check your browser's settings to be sure you have pop-ups enabled.</p>
+</section>
+<section class="no-auth">
+  <p>Please <a>Log in</a> with SoundCloud account</p>
 </section>
 <div class="auth-on main">
   <div>
