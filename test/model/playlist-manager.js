@@ -18,8 +18,11 @@ module.exports = function (t, a) {
   manager.insert(z);
   manager.insert(y);
 
+  manager.select(z);
+
   json = JSON.parse(JSON.stringify(manager));
-  a.deep(json, ['x', 'z', 'y'], "toJSON");
+  a(json.selected, 1, "toJSON: selected");
+  a.deep(json.data, ['x', 'z', 'y'], "toJSON: data");
 
   a.deep(t.fromJSON(['w', 'y']).map(i), [w, y], "fromJSON");
 };
