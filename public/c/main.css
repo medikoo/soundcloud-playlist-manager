@@ -1,3 +1,5 @@
+html, button, input, select, textarea {
+  font-family: sans-serif; font-size: 100%; }
 *:not(button) { margin: 0; padding: 0; }
 body { padding: 0 12px; color: #333; background: white; min-width: 750px; }
 body > *, .body > *, section.playlist-manager > *, section.playlist > * {
