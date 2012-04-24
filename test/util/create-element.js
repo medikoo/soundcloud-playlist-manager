@@ -33,4 +33,7 @@ module.exports = function (t, a) {
   node = t('div', el2, 'Test').childNodes[1];
   a(node.nodeType, 3, "String to Text node");
   a(node.data, 'Test', "String to Text node: content");
+
+  node = t('div', 'String').childNodes[0];
+  a(node.data, 'String', "String to Text node (no attrs)");
 };
