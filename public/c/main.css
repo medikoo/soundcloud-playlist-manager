@@ -85,7 +85,8 @@ tbody.tracks td:last-child {
   text-align: right; white-space:nowrap; padding-right: 12px;  }
 tbody.tracks tr.selected td, li.selected { background: white; }
 tbody.tracks tr.playing td, li.playing { background: #ffffbf; }
-tbody.tracks td input.playstop { padding: 0; width: 49px; }
+tbody.tracks td input.playstop { padding: 0; }
+input.playstop { width: 4em; }
 
 .overlay p.close { position: absolute; top: 0; right: 10px; font-size: 14px; }
 .overlay p.close a { color: #888; cursor: pointer; }
