@@ -8,8 +8,8 @@ body > * { width: 100%; } /* Firefox */
 body > *, .body > *, section.playlist-manager > *, section.playlist > * {
   margin: 12px 0; }
 body > header, section { background: #eee; border: 1px solid #ddd; }
-section { padding: 12px; }
-body > header > * > * { padding: 12px; }
+body > section { padding: 0; }
+body > header > * > *, section, body > section > p { padding: 12px; }
 h1 { line-height: 48px; }
 p { line-height: 24px; }
 a, input[type=button], input[type=submit] { cursor: pointer; }
