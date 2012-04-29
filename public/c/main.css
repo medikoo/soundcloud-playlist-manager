@@ -41,7 +41,6 @@ section.playlist-manager li a {
   display: block;
   padding: 0 12px;
 }
-li.selected { background: #f8f8f8; }
 
 .body > *:first-child, section.playlist-manager > *:first-child,
   section.playlist > *:first-child { margin-top: 0; }
@@ -81,8 +80,8 @@ tbody.tracks tr:hover td { background: #f8f8f8; }
 tbody.tracks td:first-child { padding-left: 12px; font-weight: bold; }
 tbody.tracks td:last-child {
   text-align: right; white-space:nowrap; padding-right: 12px;  }
-tbody.tracks tr.selected td { background: white; }
-tbody.tracks tr.playing td { background: #f5f7ab; }
+tbody.tracks tr.selected td, li.selected { background: white; }
+tbody.tracks tr.playing td, li.playing { background: #ffffbf; }
 tbody.tracks td input.playstop { padding: 0; width: 49px; }
 
 .overlay p.close { position: absolute; top: 0; right: 10px; font-size: 14px; }
