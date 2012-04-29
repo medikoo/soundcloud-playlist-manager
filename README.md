@@ -14,9 +14,7 @@ code two steps needs to be done:
 * Register new SoundCloud application at http://soundcloud.com/you/apps/. and set _Redirect URI_ to _http://<location-where-its-hosted>/auth-callback.html_. Afterwards create _config.js_ file in main folder with this content:
 
 ```javascript
-exports.KEY = 'YOUR APPLICATION CLIENT ID';
+exports.KEY = '<YOUR APPLICATION CLIENT ID>';
 ````
-
-Be sure fill _Client ID_ of your application.
 
 * Make sure you have [Node.js](http://nodejs.org/) installed and run `npm run-script setup` in application folder
