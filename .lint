@@ -1,5 +1,6 @@
 @root
 indent 2
+controlledassign
 maxlen 80
 !node
 nomen
