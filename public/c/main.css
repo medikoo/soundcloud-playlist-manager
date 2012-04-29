@@ -73,7 +73,7 @@ input:disabled { color: #bbb; }
 .add-tracks-form { top: 20px; right: 20%; }
 .add-tracks-form form p { white-space: nowrap; }
 
-.add-tracks-form div.table { margin-left: -12px; margin-right: -12px }
+.add-tracks-form div.table, section.playlist div.table { margin-left: -12px; margin-right: -12px }
 tbody.tracks td { padding: 0; font-size: 12px; cursor: pointer; }
 tbody.tracks tr:hover td { background: #f8f8f8; }
 tbody.tracks td:first-child { padding-left: 12px; font-weight: bold; }
