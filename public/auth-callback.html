@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <title>Connect with SoundCloud</title>
 <script>
-  window.opener.setTimeout(window.opener.SC.connectCallback, 1);
-  window.close();
+  (function () {
+    var hash = location.hash;
+    localStorage._auth = hash && hash.match(/#access_token=([\0-%'-\uffff]+)/)[1];
+    window.opener.setTimeout(window.opener.SC.connectCallback, 1);
+    window.close();
+  }());
 </script>
