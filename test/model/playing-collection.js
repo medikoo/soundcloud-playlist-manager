@@ -1,12 +1,15 @@
 'use strict';
 
 var i    = require('es5-ext/lib/function/i')
+  , Track = require('../../lib/model/track')
   , noop = Function.noop;
 
 module.exports = function (t, a) {
   var col = Object.merge([], t), node, json, invoked, history
-    , x = { _id: 'x', play: noop }, y = { _id: 'y', play: noop }
-    , z = { _id: 'z', play: noop }, w = { _id: 'w', play: noop };
+    , x = new Track('xc', 'test', 'test', 'test')
+    , y = new Track('yc', 'test', 'test', 'test')
+    , z = new Track('zc', 'test', 'test', 'test')
+    , w = new Track('wc', 'test', 'test', 'test');
 
   col.insert(x);
   a(col.length, 1, "Insert: length");
