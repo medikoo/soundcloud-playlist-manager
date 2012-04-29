@@ -15,6 +15,9 @@ predef+ confirm, console
 browser
 predef+ alert
 
+./lib/shim/bind.js
+evil:function
+
 ./lib/soundmanager2.js
 predef+ soundManager
 
