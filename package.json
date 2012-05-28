@@ -8,18 +8,16 @@
     "url": "git://github.com/medikoo/soundcloud-playlist-manager.git"
   },
   "dependencies": {
-    "es5-ext": "git://github.com/medikoo/es5-ext.git",
-    "deferred": "git://github.com/medikoo/deferred.git",
-    "event-emitter": "git://github.com/medikoo/event-emitter.git",
+    "es5-ext": "0.8.x",
+    "deferred": "0.5.x",
+    "event-emitter": "0.1.x",
     "webmake": "0.3.x"
   },
   "devDependencies": {
     "jsdom": "0.2.x",
-    "jslint": "git://github.com/medikoo/node-jslint.git#medikoo",
     "tad": "0.1.x"
   },
   "scripts": {
-    "lint": "node ./node_modules/jslint/bin/jslint --git",
     "setup": "node ./node_modules/webmake/bin/webmake ./lib/public/main.js ./public/j/main.js",
     "test": "node ./test"
   }

@@ -5,7 +5,7 @@ var i    = require('es5-ext/lib/function/i')
   , noop = Function.noop;
 
 module.exports = function (t, a) {
-  var col = Object.merge([], t), node, json, invoked, history
+  var col = Object.extend([], t), node, json, invoked, history
     , x = new Track('xc', 'test', 'test', 'test')
     , y = new Track('yc', 'test', 'test', 'test')
     , z = new Track('zc', 'test', 'test', 'test')
